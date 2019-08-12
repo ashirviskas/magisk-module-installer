@@ -6,7 +6,7 @@ This module increases the default volume of Headphones from 80 to 92.
 * Install this as any other Magisk module
 * Don't forget to reboot!
 
-## Caution**
+## Caution
  This may be dangerous to your phone's DAC, your heaphones or your hearing. I will not be responsible for any loss, so use it with caution.
 
 ## Uninstall
