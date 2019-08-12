@@ -51,7 +51,6 @@ REPLACE_EXAMPLE="
 
 # Construct your own list here
 REPLACE="
-/system/vendor/etc/mixer_paths_tavil.xml
 "
 
 ##########################################################################################
@@ -136,6 +135,8 @@ print_modname() {
 on_install() {
   # The following is the default implementation: extract $ZIPFILE/system to $MODPATH
   # Extend/change the logic to whatever you want
+  custom_variables()
+  device_check()
   ui_print "- Extracting module files"
   unzip -o "$ZIPFILE" 'system/*' -d $MODPATH >&2
 }
@@ -156,3 +157,18 @@ set_permissions() {
 }
 
 # You can add more functions to assist your custom script code
+# CUSTOM FUNCTIONS
+
+custom_variables() {
+if [ -f vendor/build.prop ]; then BUILDS="/system/build.prop vendor/build.prop"; else BUILDS="/system/build.prop"; fi
+  OP6=$(grep -E "ro.product.device=OnePlus6" $BUILDS)
+  ROM=$(grep -E "ro.oxygen.version=9.0.8" $BUILDS)
+}
+
+device_check() {
+  if [ -n "$OP6" ] || [ -n "$ROM" ]; then
+    return 0
+  else
+    abort "Your device is not a OnePlus 6, your OOS version is not 9.0.8 or you are using a modified build.prop"
+  fi
+}
