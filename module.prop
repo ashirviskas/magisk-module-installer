@@ -1,6 +1,6 @@
-id=template
-name=Template Module
-version=v1
+id=op6_headphone_boost
+name=Oneplus 6 Heaphone Jack boost
+version=v1_90
 versionCode=1
-author=topjohnwu
-description=A short description
+author=ashirviskas
+description=Increase Default system volume for Headphones preset from 80 to 92

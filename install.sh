@@ -51,6 +51,7 @@ REPLACE_EXAMPLE="
 
 # Construct your own list here
 REPLACE="
+/system/vendor/etc/mixer_paths_tavil.xml
 "
 
 ##########################################################################################
@@ -123,7 +124,10 @@ REPLACE="
 
 print_modname() {
   ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
+  ui_print "   HEADPHONE JACK VOLUME FIX   "
+  ui_print "         FOR ONEPLUS 6         "
+  ui_print "        BY ASHIRVISKAS         "
+  ui_print "           80 => 92            "
   ui_print "*******************************"
 }
 

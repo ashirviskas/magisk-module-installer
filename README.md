@@ -1,7 +1,13 @@
-# Magisk Installer
+#  Headphone jack boost mod for Oneplus 6
 
-**Update `README.md` if you want to submit your module to the online repo!**
+This module increases the default volume of Headphones from 80 to 92.
 
-For more information about how to use this module installer, please refer to [documentations](https://topjohnwu.github.io/Magisk/guides.html)
+## Installation instructions
+* Install this as any other Magisk module
+* Don't forget to reboot!
 
-If you are not familiar with the Markdown syntax, you can start by experimenting on GitHub's online Markdown editor, which will let you preview before publishing. If you need more help, the [Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) will be handy.
+## Caution**
+ This may be dangerous to your phone's DAC, your heaphones or your hearing. I will not be responsible for any loss, so use it with caution.
+
+## Uninstall
+ Just disable/remove the module in Magisk Manager.
